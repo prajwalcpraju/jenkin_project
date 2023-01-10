@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+        stage('git'){
+            steps{
+                 echo 'git is checking'
+            }
+        }
+        stage('build.bat') {
+            steps { 
+                echo 'Welcome to build '
+            }
+        }
+        stage('run.bat') {
+            steps { 
+                echo 'Welcome to run'
+            }
+        }
+        stage('unittest.bat') {
+            steps { 
+                echo 'Welcome to unit-test'
+            }
+        }
+    }
+}
